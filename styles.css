@@ -1,0 +1,85 @@
+/* General body styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Gallery Page */
+.gallery-container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+}
+
+td {
+    padding: 20px;
+    width: 50%;   
+    display: flex;
+    vertical-align: top;
+    align-items: center;
+    object-fit: cover;
+    gap: 20px;
+   
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 0ch;
+    display: block;
+    margin: 0 20px;
+    
+   }
+
+.info {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 0px;
+    display: block;
+    margin: 0 20px;
+   }
+
+
+.info p, .info span {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    
+    
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a.link-button button {
+    background-color: #007BFF;
+}
+
+a.link-button button:hover {
+    background-color: #0056b3;
+}

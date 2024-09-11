@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Comic Sans MS', sans-serif;
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            text-align: right;
+            width: 50%;
+        }
+
+        td:first-child {
+            width: 150px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" maxlength="40"></td>
+            </tr>
+            <tr>
+                <td>Feedback:</td>
+                <td><textarea rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
