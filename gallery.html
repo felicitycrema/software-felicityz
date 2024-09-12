@@ -4,39 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: white;
+            margin-top: 5px;
+        }
+        p {
+            font-size: 15px;
+            color: white; 
+            font-weight: lighter;       
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 400px;            
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            tr {
+                display: block;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="gallery-container">
-        <table>
-            <tr>
-                <td>
-                    <div class="info">
-                        <p>ELECTRIC DRIVES.</p>
-                        <span>
-                            At INNOVATIVE, the future of mobility is electric. With powerful electric motors and increased-capacity energy storage, you get fast acceleration right from the start.
-                        </span>
-                        <a href="./contact.html" class="link-button">
-                            <button>Booking</button>
-                        </a>
-                    </div>
-                    <img src="./pictures/2560x896-antriebstechnologie.jpeg" alt="Electric Drives">
-                </td>
 
-                <td>
-                    <img src="./pictures/BMW-i5-Flow-NOSTOKANA-image-BMW.webp" alt="BMW i5 Flow NOSTOKANA">
-                    <div class="info">
-                        <p>The BMW Group presents a fusion of art and innovation at the Frieze Los Angeles art fair in the form of the BMW i5 Flow NOSTOKANA. The one-of-a-kind vehicle combines colour-change technology developed by BMW with the artistic language of South African artist Esther Mahlangu.</p>
-                        <span>
-                            Test drive the innovative BMW i5. Click the button below to schedule your drive today!
-                        </span>
-                        <a href="./contact.html" class="link-button">
-                            <button>Booking</button>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <table>
+        <tr>
+            <td>
+                <img src="./pictures/BMW-i5-Flow-NOSTOKANA-image-BMW.webp" alt="BMW i5 Flow NOSTOKANA">
+                <h3>BMW i5 Flow NOSTOKANA</h3>
+                <p>The BMW Group presents a fusion of art and innovation at the Frieze Los Angeles art fair in the form of the BMW i5 Flow NOSTOKANA. The one-of-a-kind vehicle combines colour-change technology developed by BMW with the artistic language of South African artist Esther Mahlangu.</p>
+            </td>
+            <td>
+                <img src="./pictures/bmw-antriebstechnologien.jpeg" alt="Electric Drives">
+                <h3>DRIVE TECHNOLOGIES</h3>
+                <p>Research into new drive technologies is one of our top priorities. Future mobility lies in the optimisation and development of drive technologies. And that’s why hydrogen is so important. Over the coming years, our strategic focus will be mainly on electric mobility specifically on the Neue Klasse, due for launch in 2025.</p>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>

@@ -3,80 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>INNOVATIVE - Contact</title>
     <style>
         body {
             background-color: black;
+            font-family: Comic Sans MS, sans-serif;
             color: white;
-            font-family: 'Comic Sans MS', sans-serif;
-            font-size: 24px;
         }
-
         table {
             width: 100%;
-            padding: 10px;
             border-collapse: collapse;
         }
-
         td {
             padding: 10px;
+            font-size: 24px;
             font-weight: bold;
-            color: white;
             text-align: right;
-            width: 50%;
+            color: white;
         }
-
-        td:first-child {
-            width: 150px;
-        }
-
         input[type="text"], textarea {
             width: 100%;
+            padding: 5px;
             font-size: 18px;
         }
-
-        textarea {
-            resize: none;
-        }
-
-        .buttons {
-            text-align: center;
-            padding-top: 20px;
-        }
-
-        button {
+        input[type="submit"], input[type="reset"] {
             padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
+            font-size: 20px;
         }
-
-        button:hover {
-            background-color: #45a049;
+        .submit-reset {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="contact-container">
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td><input type="text" maxlength="40"></td>
-            </tr>
-            <tr>
-                <td>Feedback:</td>
-                <td><textarea rows="5" cols="40"></textarea></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="buttons">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <h1>Contact Us</h1>
+    <table>
+        <tr>
+            <td style="width: 150px;">Name:</td>
+            <td><input type="text" maxlength="40"></td>
+        </tr>
+        <tr>
+            <td>Feedback:</td>
+            <td><textarea cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="submit-reset">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
